@@ -1,0 +1,244 @@
+.modal-backdrop.in {
+    opacity:.8
+}
+.modal .modal-body {
+    background-color:#fff;
+    padding:20px;
+    border-radius:0
+}
+.modal_close {
+    position:absolute;
+    right:12px; top:12px;
+    color:#292929;
+    z-index:1;
+    font-size:36px;
+    line-height:8px;
+    cursor:pointer
+}
+.modal-title {
+    margin:0; padding:0;
+    font-size:30px;
+    color:#000;
+    font-weight:300;
+}
+.modal-sub-title {
+    display:block;
+    color:#767676;
+    font-size:16px;
+}
+
+.modal-basket .modal-dialog {
+    width:100%; max-width:650px;
+}
+
+.busket-content {
+    margin-top:20px;
+    padding:25px 0 0;
+    border-top:1px #bcbcbc solid;
+}
+.busket-item {
+    padding:25px 0;
+    margin:0 10px;
+    border-bottom:1px #e4e4e4 solid;
+}
+.busket-item-img {
+    text-align:center;
+}
+.busket-item-img figure {
+    display:block;
+    width:100%; max-width:85px;
+}
+.busket-item-img figure img {
+    width:100%
+}
+.busket-item-img .del,
+.busket-item-title .del {
+    display:block;
+    line-height:10px;
+    color:#8f8f8f;
+    font-size:13px;
+}
+.busket-item-img .del:hover {
+    opacity:.8
+}
+.busket-item-title {
+    color:#222;
+    font-size:16px;
+    font-weight:bold;
+    padding-top:5px;
+}
+.busket-item-title .del {
+    font-size:10px;
+}
+.busket-amount {
+    text-align:center;
+    float:right;
+    margin:10px 0 0;
+}
+.busket-amount a {
+    display:block;
+    float:left;
+    padding:13px 5px;
+}
+.busket-amount a:hover {
+    opacity:.8
+}
+.busket-amount a span {
+    display:block;
+    width:8px; height:8px;
+    border:1px #000 solid;
+    transform:rotateZ(45deg);
+}
+.busket-amount a.busket-amount-minus span {
+    border-right:0; border-top:0;
+}
+.busket-amount a.busket-amount-plus span {
+    border-left:0; border-bottom:0;
+}
+.busket-amount .busket-amount-text {
+    margin:0; padding:0;
+    float:left;
+    width:35px;
+    line-height:30px;
+    border:1px #eaeaea solid;
+    text-align:center;
+    font-size:17px;
+    color:#000;
+}
+.busket-item .product-price {
+    float:right
+}
+.busket-item .product-price .oldprice {
+    display:block;
+    color:#dc3e3e;
+    font-size:14px;
+    text-decoration: line-through;
+}
+.busket-item .product-price .price {
+    font-size:14px;
+    display:block;
+    line-height:17px;
+}
+.busket-item .product-price .price strong {
+    font-weight:normal;
+    font-size:25px;
+    padding-right:5px;
+}
+
+.form-content {
+    padding-top:25px
+}
+.form-content .input-wrap {
+    height:42px;
+    position:relative;
+    background-color:#ededed;
+    margin-bottom:30px;
+}
+.form-content .input-wrap.with-tooltip input,
+.form-content .input-wrap.with-tooltip .fake-input {
+    width:calc(100% - 40px);
+    float:left
+}
+.form-content .input-wrap.with-tooltip button {
+    background:transparent url(../img/info.png) no-repeat center;
+    width:40px; height:42px;
+    margin:0; padding:0;
+    border:0;
+}
+.form-content .input-wrap .fake-input,
+.form-content .input-wrap input {
+    font-size:15px;
+    color:#808080;
+    line-height:42px;
+    background-color:transparent;
+    padding:0 0 0 10px;
+    border:0;
+}
+.form-content .input-wrap .fake-input span {
+    color:#eb222b;
+}
+.form-content .input-wrap .fake-input.empty,
+.form-content .input-wrap .fake-input.empty span {
+    color:transparent;
+}
+.form-content .input-wrap input {
+    position:absolute;
+    top:0; left:0;
+    width:100%;
+}
+.form-content .bottom-links {
+    text-align:center;
+    margin-top:20px;
+}
+.form-content .bottom-links p {
+    margin-bottom:15px;
+}
+.form-content .bottom-links a {
+    display:inline-block;
+    color:#55b4e6;
+    border-bottom:1px #55b4e6 dashed;
+}
+.form-content .bottom-links p:last-of-type {
+    margin:0
+}
+.form-content .bottom-links a:hover {
+    border-color:transparent;
+}
+
+.form-content .social-login {
+    margin-top:15px;
+}
+.form-content .social-login .social-login-title {
+    font-size:24px;
+    color:#000;
+    text-align:center;
+    margin-bottom:25px;
+}
+.form-content .social-login ul {
+    margin:0 auto; padding:0;
+    list-style:none;
+    display:table;
+}
+.form-content .social-login ul li {
+    display:inline-block;
+    padding:0 8px;
+}
+.form-content .social-login ul li a {
+    display:block;
+}
+.form-content .social-login ul li a:hover {
+    opacity:.8
+}
+.modal-form .modal-dialog {
+    width:100%; max-width:430px;
+}
+.modal-form .modal-dialog .modal-body {
+    padding:40px;
+}
+
+.tooltip {
+    top:-24px!important; left:100%!important;
+    opacity:1!important;
+    margin-left:-9px!important;
+}
+.tooltip.right .tooltip-arrow {
+    border:0;
+    width:5px; height:5px;
+    margin:0;
+    left:3px;
+    transform:translate(0,-50%) rotateZ(45deg);
+    background-color:#fff;
+    box-shadow:-2px 2px 5px rgba(72,72,72,.26)
+}
+.tooltip-inner {
+    background-color:#fff;
+    box-shadow:0 0 5px rgba(72,72,72,.26);
+    border-radius:0;
+    color:#000;
+    font-size:14px;
+    font-weight:300;
+    padding:15px;
+    width:260px;
+    max-width:260px;
+    text-align:left
+}

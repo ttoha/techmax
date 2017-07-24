@@ -1,0 +1,143 @@
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-balance {
+    width: 18px;
+    height: 18px;
+    background-position: -2px -2px;
+}
+
+.sprite-balance_blue {
+    width: 18px;
+    height: 18px;
+    background-position: -24px -2px;
+}
+
+.sprite-balance_grey {
+    width: 24px;
+    height: 24px;
+    background-position: -46px -2px;
+}
+
+.sprite-balance_yellow {
+    width: 24px;
+    height: 24px;
+    background-position: -74px -2px;
+}
+
+.sprite-basket {
+    width: 19px;
+    height: 18px;
+    background-position: -102px -2px;
+}
+
+.sprite-basket_white {
+    width: 19px;
+    height: 18px;
+    background-position: -125px -2px;
+}
+
+.sprite-clock {
+    width: 17px;
+    height: 17px;
+    background-position: -148px -2px;
+}
+
+.sprite-favorite {
+    width: 18px;
+    height: 18px;
+    background-position: -169px -2px;
+}
+
+.sprite-favorite_blue {
+    width: 18px;
+    height: 18px;
+    background-position: -191px -2px;
+}
+
+.sprite-favorite_grey {
+    width: 24px;
+    height: 24px;
+    background-position: -213px -2px;
+}
+
+.sprite-favorite_yellow {
+    width: 24px;
+    height: 24px;
+    background-position: -241px -2px;
+}
+
+.sprite-lock {
+    width: 14px;
+    height: 17px;
+    background-position: -269px -2px;
+}
+
+.sprite-lock_blue {
+    width: 14px;
+    height: 17px;
+    background-position: -287px -2px;
+}
+
+.sprite-mail {
+    width: 18px;
+    height: 18px;
+    background-position: -305px -2px;
+}
+
+.sprite-mail_blue {
+    width: 18px;
+    height: 18px;
+    background-position: -327px -2px;
+}
+
+.sprite-phone {
+    width: 17px;
+    height: 17px;
+    background-position: -349px -2px;
+}
+
+.sprite-star {
+    width: 16px;
+    height: 15px;
+    background-position: -370px -2px;
+}
+
+.sprite-star_grey {
+    width: 16px;
+    height: 15px;
+    background-position: -390px -2px;
+}
+
+.social {
+    background-image: url(../img/social.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.social-fb {
+    width: 22px;
+    height: 22px;
+    background-position: 0 0;
+}
+
+.social-gp {
+    width: 22px;
+    height: 22px;
+    background-position: -22px 0;
+}
+
+.social-vk {
+    width: 22px;
+    height: 22px;
+    background-position: 0 -22px;
+}
+
+.social-yt {
+    width: 22px;
+    height: 22px;
+    background-position: -22px -22px;
+}
