@@ -11,7 +11,10 @@
 			  src="https://code.jquery.com/jquery-2.2.4.min.js"
 			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
 			  crossorigin="anonymous"></script>
+
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
     <script src="js/menu.js" type="text/javascript"></script>
     <script src="js/slick.min.js" type="text/javascript"></script>
     <script src="js/functions.js" type="text/javascript"></script>
@@ -441,7 +444,7 @@
         </div>
     </header>
 
-    <section class="blue">
+    <section class="green">
         <div class="container">
             <div class="row">
                 <ul class="breadcrumb">
@@ -450,92 +453,202 @@
                     <li><a href="#" title="Комплектующие для ПК">Комплектующие для ПК</a></li>
                     <li class="active">Корпуса</li>
                 </ul>
-                <div class="col-xs-12 col-sm-9 col-sm-offset-3"><h1 class="page-title-left">Отложенные</h1></div>
+                <div class="col-xs-12 col-sm-9 col-sm-offset-3">
+                    <h1 class="page-title-left">Корпуса</h1>
+                    <div class="sort-wrap hidden-xs">
+                        <div class="sort">
+                            Cортировать по:
+                            <select class="custom-select">
+                                <option>уменьшению цены</option>
+                                <option>увеличение цены</option>
+                                <option>по популярности</option>
+                                <option>по рейтингу</option>
+                            </select>
+                        </div>
+                        <div class="view">
+                            <span class="view-item view-block active">
+                                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                            </span>
+                            <span class="view-item view-list">
+                                <i></i><i></i><i></i><i></i><i></i><i></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-xs-12 col-sm-3">
                     <aside class="sidebar">
-                        <div class="sidebar-block">
-                            <h3 class="sidebar-title" data-toggle="dropdown">
-                                Категории
+                        <div class="sidebar-block keep-open">
+                            <h3 class="sidebar-title visible-xs" data-toggle="dropdown">
+                                Фильтры
                             </h3>
+                            <div class="hidden-phone">
+                                <h3 class="sidebar-title without-open">
+                                    Цена
+                                </h3>
+                                <form class="price-slider" action="#">
+                                    <div class="numb-wrap">
+                                        <div class="numb">
+                                            <input type="text" class="txt" id="minCost"  value="50"/>
+                                            <span></span>
+                                            <input type="text" class="txt" id="maxCost"  value="150000"/>
+                                        </div>
+                                        <input type="submit" value="ПОКАЗАТЬ" class="bt" />
+                                    </div>
+                                    <div id="slider"></div>
+                                </form>
 
-                            <ul class="sidebar-menu">
-                                <li>
-                                    <a href="#" title="Комплектующие">Комплектующие</a>
-                                    (45)
-                                </li>
-                                <li>
-                                    <a href="#" title="Ноутбуки">Ноутбуки</a>
-                                    (45)
-                                </li>
-                            </ul>
+                                <div class="filter-item">
+                                    <h3 class="sidebar-title collapsed" data-toggle="collapse" href="#filter_1" aria-expanded="true" aria-controls="filter_1">
+                                        Блок питания
+                                    </h3>
+                                    <form id="filter_1" action="#" class="filter-list collapse">
+                                        <ul>
+                                            <li>
+                                                <label for="filter_1_1">
+                                                    <input id="filter_1_1" type="checkbox" />
+                                                    <i></i>
+                                                    Без блока питания<span>(45)</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="filter_1_2">
+                                                    <input id="filter_1_2" type="checkbox" />
+                                                    <i></i>
+                                                    400 W<span>(45)</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="filter_1_3">
+                                                    <input id="filter_1_3" type="checkbox" />
+                                                    <i></i>
+                                                    500 W<span>(45)</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="filter_1_4">
+                                                    <input id="filter_1_4" type="checkbox" />
+                                                    <i></i>
+                                                    600 W<span>(45)</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="filter_1_5">
+                                                    <input id="filter_1_5" type="checkbox" />
+                                                    <i></i>
+                                                    700 W<span>(45)</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="filter_1_6">
+                                                    <input id="filter_1_6" type="checkbox" />
+                                                    <i></i>
+                                                    800 W<span>(45)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <div class="filter-item">
+                                    <h3 class="sidebar-title collapsed" data-toggle="collapse" href="#filter_2" aria-expanded="true" aria-controls="filter_2">
+                                        Производитель
+                                    </h3>
+                                    <form id="filter_2" action="#" class="filter-list collapse">
+                                        <ul>
+                                            <li>
+                                                <label for="filter_2_1">
+                                                    <input id="filter_2_1" type="checkbox" />
+                                                    <i></i>
+                                                    AeroCool<span>(45)</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="filter_2_2">
+                                                    <input id="filter_2_2" type="checkbox" />
+                                                    <i></i>
+                                                    Casecom<span>(45)</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="filter_2_3">
+                                                    <input id="filter_2_3" type="checkbox" />
+                                                    <i></i>
+                                                    Chieftec<span>(45)</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="filter_2_4">
+                                                    <input id="filter_2_4" type="checkbox" />
+                                                    <i></i>
+                                                    Corsair<span>(45)</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="filter_2_5">
+                                                    <input id="filter_2_5" type="checkbox" />
+                                                    <i></i>
+                                                    CoolerMaster<span>(45)</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="filter_2_6">
+                                                    <input id="filter_2_6" type="checkbox" />
+                                                    <i></i>
+                                                    Deepcool<span>(45)</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="filter_2_7">
+                                                    <input id="filter_2_7" type="checkbox" />
+                                                    <i></i>
+                                                    Foxline<span>(45)</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="filter_2_8">
+                                                    <input id="filter_2_8" type="checkbox" />
+                                                    <i></i>
+                                                    Fractal Design<span>(45)</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="filter_2_9">
+                                                    <input id="filter_2_9" type="checkbox" />
+                                                    <i></i>
+                                                    GreenVision<span>(45)</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="filter_2_10">
+                                                    <input id="filter_2_10" type="checkbox" />
+                                                    <i></i>
+                                                    In Win<span>(45)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <div class="small-banner hidden-xs">
+                                <a href="#" title="">
+                                    <img src="img/content/small_banner1.jpg" alt="">
+                                </a>
+                            </div>
+                            </div>
                         </div>
                     </aside>
                 </div>
                 <div class="col-xs-12 col-sm-9">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-lg-4">
-                                <article class="product-item-wrap">
-                                    <div class="product-item new">
-                                        <div class="product-place">
-                                            <div class="product-img">
-                                                <a href="#" title="Название товара в две строки Мышь LF-GM 045 USB">
-                                                    <figure>
-                                                        <img src="img/content/product1.png" alt="Название товара в две строки Мышь LF-GM 045 USB" />
-                                                        <figcaption>Название товара в две строки Мышь LF-GM 045 USB</figcaption>
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <span class="check">в наличии</span>
-                                        <div class="product-price">
-                                            <span class="oldprice">4360</span>
-                                            <span class="price"><strong>2760</strong>грн.</span>
-                                        </div>
-                                        <a href="#" class="bt">
-                                            <span class="sprite sprite-basket_white"></span>
-                                            Купить
-                                        </a>
-                                        <div class="action">
-                                            <ul class="fav">
-                                                <li class="balance">
-                                                    <a href="#" title="">
-                                                        <span></span>
-                                                    </a>
-                                                </li>
-                                                <li class="favorite">
-                                                    <a href="#" title="">
-                                                        <span></span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="stars">
-                                                <li class="not-active">
-                                                    <span></span>
-                                                </li>
-                                                <li class="not-active">
-                                                    <span></span>
-                                                </li>
-                                                <li>
-                                                    <span></span>
-                                                </li>
-                                                <li>
-                                                    <span></span>
-                                                </li>
-                                                <li>
-                                                    <span></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-info">
-                                            <p>Материнские платы: <strong>ATX</strong></p>
-                                            <p>Наличие блока питания: <strong>без блока</strong></p>
-                                            <p>Типоразмер: <strong>Miditower</strong></p>
-                                            <p>Класс корпуса: <strong>Геймерские</strong></p>
-                                            <p>Особенности: <strong>Окно на панели</strong></p>
-                                        </div>
-                                    </div>
-                                </article>
+                            <div class="sort-wrap visible-xs">
+                                <div class="sort">
+                                    Cортировать по:
+                                    <select class="custom-select">
+                                        <option>уменьшению цены</option>
+                                        <option>увеличение цены</option>
+                                        <option>по популярности</option>
+                                        <option>по рейтингу</option>
+                                    </select>
+                                </div>
                             </div>
 
                             <div class="col-xs-12 col-sm-6 col-lg-4">
@@ -599,23 +712,25 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-4">
                                 <article class="product-item-wrap">
-                                    <div class="product-item disabled">
+                                    <div class="product-item discount">
                                         <div class="product-place">
                                             <div class="product-img">
-                                                <a href="#" title="Вебкамера LF-PC024">
-                                                <figure>
-                                                    <img src="img/content/product3.png" alt="Вебкамера LF-PC024" />
-                                                    <figcaption>Вебкамера LF-PC024</figcaption>
-                                                </figure>
+                                                <a href="#" title="Корпус LP 0121-400W">
+                                                    <figure>
+                                                        <img src="img/content/product2.png" alt="Корпус LP 0121-400W" />
+                                                        <figcaption>Корпус LP 0121-400W</figcaption>
+                                                    </figure>
                                                 </a>
                                             </div>
                                         </div>
-                                        <span class="check">нет в наличии</span>
+                                        <span class="check">в наличии</span>
                                         <div class="product-price">
+                                            <span class="oldprice">4360</span>
                                             <span class="price"><strong>2760</strong>грн.</span>
                                         </div>
-                                        <a href="#" class="bt" title="Сообщить когда появится">
-                                            Сообщить когда появится
+                                        <a href="#" class="bt">
+                                            <span class="sprite sprite-basket_white"></span>
+                                            Купить
                                         </a>
                                         <div class="action">
                                             <ul class="fav">
@@ -631,61 +746,7 @@
                                                 </li>
                                             </ul>
                                             <ul class="stars">
-                                                <li>
-                                                    <span></span>
-                                                </li>
-                                                <li>
-                                                    <span></span>
-                                                </li>
-                                                <li>
-                                                    <span></span>
-                                                </li>
-                                                <li>
-                                                    <span></span>
-                                                </li>
-                                                <li>
-                                                    <span></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-lg-4">
-                                <article class="product-item-wrap">
-                                    <div class="product-item disabled">
-                                        <div class="product-place">
-                                            <div class="product-img">
-                                                <a href="#" title="Вебкамера LF-PC024">
-                                                <figure>
-                                                    <img src="img/content/product3.png" alt="Вебкамера LF-PC024" />
-                                                    <figcaption>Вебкамера LF-PC024</figcaption>
-                                                </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <span class="check">нет в наличии</span>
-                                        <div class="product-price">
-                                            <span class="price"><strong>2760</strong>грн.</span>
-                                        </div>
-                                        <a href="#" class="bt" title="Сообщить когда появится">
-                                            Сообщить когда появится
-                                        </a>
-                                        <div class="action">
-                                            <ul class="fav">
-                                                <li class="balance">
-                                                    <a href="#" title="">
-                                                        <span></span>
-                                                    </a>
-                                                </li>
-                                                <li class="favorite">
-                                                    <a href="#" title="">
-                                                        <span></span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="stars">
-                                                <li>
+                                                <li class="not-active">
                                                     <span></span>
                                                 </li>
                                                 <li>
@@ -707,6 +768,471 @@
                                         </div>
                                     </div>
                                 </article>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <article class="product-item-wrap">
+                                    <div class="product-item discount">
+                                        <div class="product-place">
+                                            <div class="product-img">
+                                                <a href="#" title="Корпус LP 0121-400W">
+                                                    <figure>
+                                                        <img src="img/content/product2.png" alt="Корпус LP 0121-400W" />
+                                                        <figcaption>Корпус LP 0121-400W</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <span class="check">в наличии</span>
+                                        <div class="product-price">
+                                            <span class="oldprice">4360</span>
+                                            <span class="price"><strong>2760</strong>грн.</span>
+                                        </div>
+                                        <a href="#" class="bt">
+                                            <span class="sprite sprite-basket_white"></span>
+                                            Купить
+                                        </a>
+                                        <div class="action">
+                                            <ul class="fav">
+                                                <li class="balance">
+                                                    <a href="#" title="">
+                                                        <span></span>
+                                                    </a>
+                                                </li>
+                                                <li class="favorite">
+                                                    <a href="#" title="">
+                                                        <span></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul class="stars">
+                                                <li class="not-active">
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-info">
+                                            <p>Модель корпуса для PC LP 8818 no PS USB 3.0 — это не просто внешняя оболочка, предназначенная для компьютера, а настоящая функциональная комплектующая, способная помочь собрать мощный</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <article class="product-item-wrap">
+                                    <div class="product-item discount">
+                                        <div class="product-place">
+                                            <div class="product-img">
+                                                <a href="#" title="Корпус LP 0121-400W">
+                                                    <figure>
+                                                        <img src="img/content/product2.png" alt="Корпус LP 0121-400W" />
+                                                        <figcaption>Корпус LP 0121-400W</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <span class="check">в наличии</span>
+                                        <div class="product-price">
+                                            <span class="oldprice">4360</span>
+                                            <span class="price"><strong>2760</strong>грн.</span>
+                                        </div>
+                                        <a href="#" class="bt">
+                                            <span class="sprite sprite-basket_white"></span>
+                                            Купить
+                                        </a>
+                                        <div class="action">
+                                            <ul class="fav">
+                                                <li class="balance">
+                                                    <a href="#" title="">
+                                                        <span></span>
+                                                    </a>
+                                                </li>
+                                                <li class="favorite">
+                                                    <a href="#" title="">
+                                                        <span></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul class="stars">
+                                                <li class="not-active">
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-info">
+                                            <p>Модель корпуса для PC LP 8818 no PS USB 3.0 — это не просто внешняя оболочка, предназначенная для компьютера, а настоящая функциональная комплектующая, способная помочь собрать мощный</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <article class="product-item-wrap">
+                                    <div class="product-item discount">
+                                        <div class="product-place">
+                                            <div class="product-img">
+                                                <a href="#" title="Корпус LP 0121-400W">
+                                                    <figure>
+                                                        <img src="img/content/product2.png" alt="Корпус LP 0121-400W" />
+                                                        <figcaption>Корпус LP 0121-400W</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <span class="check">в наличии</span>
+                                        <div class="product-price">
+                                            <span class="oldprice">4360</span>
+                                            <span class="price"><strong>2760</strong>грн.</span>
+                                        </div>
+                                        <a href="#" class="bt">
+                                            <span class="sprite sprite-basket_white"></span>
+                                            Купить
+                                        </a>
+                                        <div class="action">
+                                            <ul class="fav">
+                                                <li class="balance">
+                                                    <a href="#" title="">
+                                                        <span></span>
+                                                    </a>
+                                                </li>
+                                                <li class="favorite">
+                                                    <a href="#" title="">
+                                                        <span></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul class="stars">
+                                                <li class="not-active">
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-info">
+                                            <p>Модель корпуса для PC LP 8818 no PS USB 3.0 — это не просто внешняя оболочка, предназначенная для компьютера, а настоящая функциональная комплектующая, способная помочь собрать мощный</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <article class="product-item-wrap">
+                                    <div class="product-item discount">
+                                        <div class="product-place">
+                                            <div class="product-img">
+                                                <a href="#" title="Корпус LP 0121-400W">
+                                                    <figure>
+                                                        <img src="img/content/product2.png" alt="Корпус LP 0121-400W" />
+                                                        <figcaption>Корпус LP 0121-400W</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <span class="check">в наличии</span>
+                                        <div class="product-price">
+                                            <span class="oldprice">4360</span>
+                                            <span class="price"><strong>2760</strong>грн.</span>
+                                        </div>
+                                        <a href="#" class="bt">
+                                            <span class="sprite sprite-basket_white"></span>
+                                            Купить
+                                        </a>
+                                        <div class="action">
+                                            <ul class="fav">
+                                                <li class="balance">
+                                                    <a href="#" title="">
+                                                        <span></span>
+                                                    </a>
+                                                </li>
+                                                <li class="favorite">
+                                                    <a href="#" title="">
+                                                        <span></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul class="stars">
+                                                <li class="not-active">
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                                <li>
+                                                    <span></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-info">
+                                            <p>Модель корпуса для PC LP 8818 no PS USB 3.0 — это не просто внешняя оболочка, предназначенная для компьютера, а настоящая функциональная комплектующая, способная помочь собрать мощный</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+
+                            <div class="col-xs-12 hidden-xs">
+                                <article class="product-item-wrap product-list">
+                                    <div class="product-item new">
+                                        <div class="product-place">
+
+                                            <div class="product-img">
+                                                <a href="#" title="Корпус LP 0121-400W">
+                                                    <figure>
+                                                        <img src="img/content/product2.png" alt="Корпус LP 0121-400W" />
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <div class="product-title">
+                                                    <a href="#" title="Корпус LP 0121-400W">
+                                                        Корпус LP 0121-400W
+                                                    </a>
+                                                </div>
+                                                <span class="check">в наличии</span>
+                                                <div class="product-desc">
+                                                    <p>
+                                                        Модель корпуса для PC LP 8818 no PS USB 3.0 — это не просто внешняя оболочка, предназначенная для компьютера, а настоящая функциональная комплектующая, способная помочь собрать мощный и современный персональный компьютер, отвечающий всем требованиям современного пользователя.
+                                                    </p>
+                                                </div>
+                                                <div class="product-desc-right">
+                                                    <div class="product-price">
+                                                        <span class="oldprice">4360</span>
+                                                        <span class="price"><strong>2760</strong>грн.</span>
+                                                    </div>
+                                                    <a href="#" class="bt">
+                                                        <span class="sprite sprite-basket_white"></span>
+                                                        Купить
+                                                    </a>
+                                                    <div class="action">
+                                                        <ul class="fav">
+                                                            <li class="balance">
+                                                                <a href="#" title="">
+                                                                    <span></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="favorite">
+                                                                <a href="#" title="">
+                                                                    <span></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="stars">
+                                                            <li class="not-active">
+                                                                <span></span>
+                                                            </li>
+                                                            <li class="not-active">
+                                                                <span></span>
+                                                            </li>
+                                                            <li>
+                                                                <span></span>
+                                                            </li>
+                                                            <li>
+                                                                <span></span>
+                                                            </li>
+                                                            <li>
+                                                                <span></span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                               <article class="product-item-wrap product-list">
+                                    <div class="product-item new">
+                                        <div class="product-place">
+
+                                            <div class="product-img">
+                                                <a href="#" title="Корпус LP 0121-400W">
+                                                    <figure>
+                                                        <img src="img/content/product2.png" alt="Корпус LP 0121-400W" />
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <div class="product-title">
+                                                    <a href="#" title="Корпус LP 0121-400W">
+                                                        Корпус LP 0121-400W
+                                                    </a>
+                                                </div>
+                                                <span class="check">в наличии</span>
+                                                <div class="product-desc">
+                                                    <p>
+                                                        Модель корпуса для PC LP 8818 no PS USB 3.0 — это не просто внешняя оболочка, предназначенная для компьютера, а настоящая функциональная комплектующая, способная помочь собрать мощный и современный персональный компьютер, отвечающий всем требованиям современного пользователя.
+                                                    </p>
+                                                </div>
+                                                <div class="product-desc-right">
+                                                    <div class="product-price">
+                                                        <span class="oldprice">4360</span>
+                                                        <span class="price"><strong>2760</strong>грн.</span>
+                                                    </div>
+                                                    <a href="#" class="bt">
+                                                        <span class="sprite sprite-basket_white"></span>
+                                                        Купить
+                                                    </a>
+                                                    <div class="action">
+                                                        <ul class="fav">
+                                                            <li class="balance">
+                                                                <a href="#" title="">
+                                                                    <span></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="favorite">
+                                                                <a href="#" title="">
+                                                                    <span></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="stars">
+                                                            <li class="not-active">
+                                                                <span></span>
+                                                            </li>
+                                                            <li class="not-active">
+                                                                <span></span>
+                                                            </li>
+                                                            <li>
+                                                                <span></span>
+                                                            </li>
+                                                            <li>
+                                                                <span></span>
+                                                            </li>
+                                                            <li>
+                                                                <span></span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                               <article class="product-item-wrap product-list">
+                                    <div class="product-item new">
+                                        <div class="product-place">
+
+                                            <div class="product-img">
+                                                <a href="#" title="Корпус LP 0121-400W">
+                                                    <figure>
+                                                        <img src="img/content/product2.png" alt="Корпус LP 0121-400W" />
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product-content">
+                                                <div class="product-title">
+                                                    <a href="#" title="Корпус LP 0121-400W">
+                                                        Корпус LP 0121-400W
+                                                    </a>
+                                                </div>
+                                                <span class="check">в наличии</span>
+                                                <div class="product-desc">
+                                                    <p>
+                                                        Модель корпуса для PC LP 8818 no PS USB 3.0 — это не просто внешняя оболочка, предназначенная для компьютера, а настоящая функциональная комплектующая, способная помочь собрать мощный и современный персональный компьютер, отвечающий всем требованиям современного пользователя.
+                                                    </p>
+                                                </div>
+                                                <div class="product-desc-right">
+                                                    <div class="product-price">
+                                                        <span class="oldprice">4360</span>
+                                                        <span class="price"><strong>2760</strong>грн.</span>
+                                                    </div>
+                                                    <a href="#" class="bt">
+                                                        <span class="sprite sprite-basket_white"></span>
+                                                        Купить
+                                                    </a>
+                                                    <div class="action">
+                                                        <ul class="fav">
+                                                            <li class="balance">
+                                                                <a href="#" title="">
+                                                                    <span></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="favorite">
+                                                                <a href="#" title="">
+                                                                    <span></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="stars">
+                                                            <li class="not-active">
+                                                                <span></span>
+                                                            </li>
+                                                            <li class="not-active">
+                                                                <span></span>
+                                                            </li>
+                                                            <li>
+                                                                <span></span>
+                                                            </li>
+                                                            <li>
+                                                                <span></span>
+                                                            </li>
+                                                            <li>
+                                                                <span></span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+
+                            <div class="col-xs-12">
+                                <ul class="paginator">
+                                    <li>
+                                        <a href="#" title="">1</a>
+                                    </li>
+                                    <li class="active">
+                                        <span>2</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">5</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

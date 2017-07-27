@@ -175,32 +175,32 @@ a.hamburger.active + .header-tabs {
     border-top-width:2px;
 }
 .header-tabs li.blue {
-    border-top-color:#0088c0
+    border-top-color:#048ed5
 }
 .header-tabs li.yellow {
-    border-top-color:#ff9800
+    border-top-color:#F29F00
 }
 .header-tabs li.green {
-    border-top-color:#6ac015
+    border-top-color:#4ba300
 }
-.header-tabs li.red {
-    border-top-color:#bd0004
+.header-tabs li.blue-light {
+    border-top-color:#00b9da
 }
 .header-tabs > li:hover.blue > a,
 .header-tabs > li.blue > a:hover {
-    background-color:#0088c0
+    background-color:#048ed5
 }
 .header-tabs > li.yellow:hover > a,
 .header-tabs > li.yellow > a:hover {
-    background-color:#ff9800
+    background-color:#F29F00
 }
 .header-tabs > li.green:hover > a,
 .header-tabs > li.green > a:hover {
-    background-color:#6ac015
+    background-color:#4ba300
 }
-.header-tabs > li.red:hover > a,
-.header-tabs > li.red > a:hover {
-    background-color:#bd0004
+.header-tabs > li.blue-light:hover > a,
+.header-tabs > li.blue-light > a:hover {
+    background-color:#00b9da
 }
 .header-tabs > li > a {
     display:flex;
@@ -215,13 +215,13 @@ a.hamburger.active + .header-tabs {
     border-color:#0088c0
 }
 .header-tabs > li.yellow .corner {
-    border-color:#0088c0
+    border-color:#f29f00
 }
 .header-tabs > li.green .corner {
-    border-color:#6ac015
+    border-color:#4ba300
 }
-.header-tabs > li.red .corner {
-    border-color:#bd0004
+.header-tabs > li.blue-light .corner {
+    border-color:#00b9da
 }
 .header-tabs > li > a .corner {
     display:none;
@@ -317,23 +317,23 @@ a.hamburger.active + .header-tabs {
     color:#0088c0
 }
 .header-tabs li.yellow .header-tab-content {
-    border-color:#ff9800
+    border-color:#F29F00
 }
 .header-tabs li.yellow .header-tab-content .header-tab-title,
 .header-tabs li.yellow .header-tab-content a:hover {
-    color:#ff9800
+    color:#F29F00
 }
 .header-tabs li.green .header-tab-content {
-    border-color:#6ac015
+    border-color:#4ba300
 }
 .header-tabs li.green .header-tab-content .header-tab-title,
 .header-tabs li.green .header-tab-content a:hover {
-    color:#6ac015
+    color:#4ba300
 }
-.header-tabs li.red .header-tab-content {
-    border-color:#bd0004
+.header-tabs li.blue-light .header-tab-content {
+    border-color:#00b9da
 }
-.header-tabs li.red .header-tab-content .header-tab-title,
-.header-tabs li.red .header-tab-content a:hover {
-    color:#bd0004
+.header-tabs li.blue-light .header-tab-content .header-tab-title,
+.header-tabs li.blue-light .header-tab-content a:hover {
+    color:#00b9da
 }

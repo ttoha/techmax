@@ -112,6 +112,103 @@
     background-position: -390px -2px;
 }
 
+.sprite-wbalance_blue {
+    width: 24px;
+    height: 24px;
+    background-position: -410px -2px;
+}
+
+.sprite-wbalance_green {
+    width: 24px;
+    height: 24px;
+    background-position: -438px -2px;
+}
+
+.sprite-wbalance_light-blue {
+    width: 24px;
+    height: 24px;
+    background-position: -466px -2px;
+}
+
+.sprite-wbalance_yellow {
+    width: 24px;
+    height: 24px;
+    background-position: -494px -2px;
+}
+
+.sprite-wdisketa_blue {
+    width: 24px;
+    height: 24px;
+    background-position: -522px -2px;
+}
+
+.sprite-wdisketa_green {
+    width: 24px;
+    height: 24px;
+    background-position: -550px -2px;
+}
+
+.sprite-wdisketa_light-blue {
+    width: 24px;
+    height: 24px;
+    background-position: -578px -2px;
+}
+
+.sprite-wdisketa_yellow {
+    width: 24px;
+    height: 24px;
+    background-position: -606px -2px;
+}
+
+.sprite-wfavorite_blue {
+    width: 24px;
+    height: 24px;
+    background-position: -634px -2px;
+}
+
+.sprite-wfavorite_green {
+    width: 24px;
+    height: 24px;
+    background-position: -662px -2px;
+}
+
+.sprite-wfavorite_light-blue {
+    width: 24px;
+    height: 24px;
+    background-position: -690px -2px;
+}
+
+.sprite-wfavorite_yellow {
+    width: 24px;
+    height: 24px;
+    background-position: -718px -2px;
+}
+
+.sprite-wprint_blue {
+    width: 24px;
+    height: 24px;
+    background-position: -746px -2px;
+}
+
+.sprite-wprint_green {
+    width: 24px;
+    height: 24px;
+    background-position: -774px -2px;
+}
+
+.sprite-wprint_light-blue {
+    width: 24px;
+    height: 24px;
+    background-position: -802px -2px;
+}
+
+.sprite-wprint_yellow {
+    width: 24px;
+    height: 24px;
+    background-position: -830px -2px;
+}
+
+
 .social {
     background-image: url(../img/social.png);
     background-repeat: no-repeat;
