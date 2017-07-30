@@ -218,6 +218,26 @@
         display:table;
         float:none
     }
+    .product-tabs .nav-tabs {
+        padding:0 5px;
+    }
+    .product-tabs .nav-tabs li a {
+        font-size:12px;
+        padding:10px 0;
+    }
+    .slider-gallery .slider-gallery-item-wrap {
+        margin-bottom:50px;
+    }
+    td.tabtd .add-button {
+        font-size:12px;
+    }
+    td.tabtd .add-button:before {
+        margin-right:10px;
+        font-size:70px;
+    }
+    .compare .product-tabs .nav-tabs li a {
+        font-size:10px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -466,7 +486,7 @@
         text-align:center;
     }
     .article-list .small-article-category.article-category {
-        display:table;
+        display:table!important;
         margin:0 auto 20px;
     }
     .article-list .small-article-item figure img,
@@ -557,7 +577,7 @@
     .form-content {
         padding-top:15px;
     }
-    .form-content .input-wrap {
+    .input-wrap {
         margin-bottom:15px;
     }
     .form-content .social-login .social-login-title {
@@ -565,5 +585,83 @@
     }
     .hidden-phone {
         padding:0 10px;
+    }
+    .product-details .page-title-left {
+        text-align:left
+    }
+    .product-sub-header {
+        padding-bottom:20px
+    }
+    .product-sub-header .check,
+    .product-sub-header .product-code {
+        margin-right:5px
+    }
+    .slider-thumb {
+        width:55px
+    }
+    .slider-thumb .slider-thumb-item {
+        width:55px; height:55px;
+    }
+    .slider-gallery .slider-gallery-item-wrap {
+        height:260px;
+        margin-bottom:50px;
+    }
+    .product-price-block .bt {
+        width:160px;
+        float:right;
+    }
+    .product-details .fav {
+        float:left;
+        width:auto;
+        margin-right:35px;
+    }
+    .product-details .fav li {
+        display:inline-block;
+    }
+    .product-details .action {
+        margin-right:35px
+    }
+    .product-details .action a {
+        margin-right:0;
+    }
+    .product-social a {
+        margin:0
+    }
+    .product-tabs .nav-tabs {
+        padding:0;
+        border:0
+    }
+    .product-tabs .nav-tabs li {
+        width:100%;
+        margin-bottom:5px
+    }
+    .product-tabs .nav-tabs li a {
+        margin:0
+    }
+
+    .compare .overflow-block {
+        width:100%;
+        overflow:auto
+    }
+    .compare .overflow-block table {
+        table-layout: auto;
+        width:1000px;
+    }
+    .compare .overflow-block table td {
+        width:250px
+    }
+    .cart-button .bt-black {
+        margin-top:20px;
+    }
+    .basket.fixed {
+        position:relative;
+        margin:0;
+    }
+    .basket.fixed a {
+        border:0;
+        padding:0!important
+    }
+    .basket.fixed .totop {
+        display:none
     }
 }

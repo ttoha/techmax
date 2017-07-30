@@ -743,3 +743,125 @@ h2.section-title {
 .blue-light .view-item.active i {
     background-color:#00b9da
 }
+
+.cart {}
+.cart fieldset {
+    padding:20px 20px 0;
+    border:1px #ededed solid;
+    margin-bottom:20px;
+}
+.cart .radio-title {
+    font-weight:bold;
+    color:000;
+    margin-bottom:15px;
+}
+.cart .radio-item-wrap {
+    margin-bottom:30px
+}
+.cart .radio-item label {
+    cursor:pointer;
+    font-size:14px;
+    font-weight:300;
+    overflow:hidden;
+}
+.cart .radio-item label input {
+    display:inline-block;
+    left:-20px;
+    position:relative;
+}
+.cart .radio-item label i {
+    background-color:#eaeaea;
+    display:inline-block;
+    bottom:-5px;
+    width:20px; height:20px;
+    margin:0 12px 0 -15px;
+    position:relative;
+}
+.cart .radio-item label input:checked + i:before {
+    content:'';
+    display:block;
+    position:absolute;
+    left:5px; right:5px; top:5px; bottom:5px;
+    background-color:#000
+}
+.cart .radio-item p {
+    margin:0; padding:0 0 0 37px;
+    font-size:12px;
+}
+.final-price {
+    padding:10px 10px 0;
+    border:1px #ededed solid;
+    margin-bottom:20px;
+}
+.final-price .price-item {
+    display:table;
+    width:100%;
+    margin-bottom:10px;
+}
+.cart .final-price .price-item span {
+    float:left
+}
+.cart .final-price .price-item strong {
+    float:right;
+}
+.cart .final-price .price-item:last-of-type {
+    border-top:1px #ededed solid;
+    padding-top:10px;
+}
+.cart .final-cart {
+    border:1px #ededed solid;
+    margin-bottom:20px
+}
+.cart .final-cart .busket-item {
+    margin:0;
+    padding:10px 0;
+}
+.cart .final-cart .busket-item:last-of-type {
+    border:0;
+}
+.cart .final-cart .busket-item .busket-item-title {
+    font-size:16px
+}
+.cart .final-cart .busket-item .busket-item-title .product-number {
+    color:#c3c3c3;
+    font-size:13px;
+    font-weight:300;
+}
+.cart textarea {
+    margin:0; padding:10px 0 0 10px;
+    width:100%; height:130px;
+    border:0;
+    background-color:#ededed;
+}
+.cart textarea::-webkit-input-placeholder {
+    color:#808080;
+    opacity:1
+}
+.cart textarea:-moz-placeholder {
+    color:#808080;
+    opacity:1
+}
+.cart textarea::placeholder {
+    color:#808080;
+    opacity:1
+}
+.cart textarea:focus::-webkit-input-placeholder {
+    color:#ededed;
+    opacity:1
+}
+.cart textarea:focus:-moz-placeholder {
+    color:#ededed;
+    opacity:1
+}
+.cart textarea:focus::placeholder {
+    color:#ededed;
+    opacity:1
+}
+.cart .cart-button {
+    margin-top:20px;
+}
+.cart .cart-button-text {
+    font-size:12px;
+    color:#a4a4a4;
+    padding:5px 0 0 10px;
+}

@@ -1,3 +1,49 @@
+.basket .totop {
+    display:none
+}
+.basket.fixed {
+    position:fixed;
+    z-index:11;
+    top:0;
+    margin-left:-11px;
+}
+.basket.fixed a {
+    display:block;
+    border:1px #d2d2d2 solid;
+    padding:10px!important;
+    border-top:0;
+    background-color:#fff;
+    border-radius:2px;
+}
+.totop {
+    position:relative;
+    background-color:#048ed5;
+    color:#fff;
+    width:47px; height:47px;
+    text-align:center;
+    font-size:12px;
+    padding-top:25px;
+    float:right;
+    margin-top:10px;
+}
+.totop span {
+    border:1px #fff solid;
+    border-right:0;
+    border-bottom:0;
+    display: block;
+    width:20px; height:20px;
+    left:50%; top:50%;
+    position:absolute;
+    transform:translate(-50%, -50%) rotateZ(45deg);
+}
+.totop:hover {
+    opacity:.8;
+    cursor:pointer;
+}
+
+.basket.fixed .totop {
+    display:block
+}
 .top-header {
     background-color:#f7f7f7;
     border-bottom:1px #eaeaea solid;

@@ -33,13 +33,15 @@
 
 .busket-content {
     margin-top:20px;
-    padding:25px 0 0;
     border-top:1px #bcbcbc solid;
 }
 .busket-item {
     padding:25px 0;
     margin:0 10px;
     border-bottom:1px #e4e4e4 solid;
+}
+.busket-item:last-of-type {
+    margin-bottom:20px;
 }
 .busket-item-img {
     text-align:center;
@@ -128,25 +130,25 @@
 .form-content {
     padding-top:25px
 }
-.form-content .input-wrap {
+.input-wrap {
     height:42px;
     position:relative;
     background-color:#ededed;
     margin-bottom:30px;
 }
-.form-content .input-wrap.with-tooltip input,
-.form-content .input-wrap.with-tooltip .fake-input {
+.input-wrap.with-tooltip input,
+.input-wrap.with-tooltip .fake-input {
     width:calc(100% - 40px);
     float:left
 }
-.form-content .input-wrap.with-tooltip button {
+.input-wrap.with-tooltip button {
     background:transparent url(../img/info.png) no-repeat center;
     width:40px; height:42px;
     margin:0; padding:0;
     border:0;
 }
-.form-content .input-wrap .fake-input,
-.form-content .input-wrap input {
+.input-wrap .fake-input,
+.input-wrap input {
     font-size:15px;
     color:#808080;
     line-height:42px;
@@ -154,14 +156,14 @@
     padding:0 0 0 10px;
     border:0;
 }
-.form-content .input-wrap .fake-input span {
+.input-wrap .fake-input span {
     color:#eb222b;
 }
-.form-content .input-wrap .fake-input.empty,
-.form-content .input-wrap .fake-input.empty span {
+.input-wrap .fake-input.empty,
+.input-wrap .fake-input.empty span {
     color:transparent;
 }
-.form-content .input-wrap input {
+.input-wrap input {
     position:absolute;
     top:0; left:0;
     width:100%;

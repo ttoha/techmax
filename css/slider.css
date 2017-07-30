@@ -129,10 +129,9 @@
     border-bottom-width:0;
     border-left-width:0
 }
-
 .big-slider {margin-bottom:10px}
 .big-slider .slick-arrow i {
-    border-color:#048ed5
+    border-color:#444
 }
 .big-slider .slick-prev {
     left:0

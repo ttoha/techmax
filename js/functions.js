@@ -64,7 +64,17 @@ jQuery(document).ready(function ($) {
  });
 
 
-
+    $(".totop").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+    $(window).bind('scroll', function () {
+        if ($(window).scrollTop() > 50) {
+            $('.basket').addClass('fixed');
+        } else {
+            $('.basket').removeClass('fixed');
+        }
+    });
     $('select.custom-select').each(function(){
         var $this = $(this), numberOfOptions = $(this).children('option').length;
 
@@ -210,6 +220,5 @@ jQuery(document).ready(function ($) {
         "click": function () {
             $(this).parent().attr('closable', true);
         }
-    })
-
+    });
 });
