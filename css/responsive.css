@@ -664,4 +664,7 @@
     .basket.fixed .totop {
         display:none
     }
+    .cabinet .bt-black {
+        max-width:100%
+    }
 }

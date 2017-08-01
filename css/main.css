@@ -288,6 +288,9 @@ h2.section-title {
     color:#c6c6c6;
     margin-bottom:5px
 }
+.sidebar-menu li.active a {
+    font-weight:bold
+}
 .sidebar-menu li:last-of-type {
     margin-bottom:0
 }
@@ -864,4 +867,11 @@ h2.section-title {
     font-size:12px;
     color:#a4a4a4;
     padding:5px 0 0 10px;
+}
+
+.cabinet .page-title-left {
+    padding-left:0
+}
+.cabinet .bt-black {
+    max-width:340px
 }
