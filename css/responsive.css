@@ -667,4 +667,19 @@
     .cabinet .bt-black {
         max-width:100%
     }
+
+    .contacts .header-desc-item {
+        width:100%;
+        margin-bottom:20px!important;
+        padding-left: 25px
+    }
+    .map-container {
+        margin-top:10px
+    }
+    #map {
+        height: 250px;
+    }
+    .contacts textarea {
+        margin-bottom:15px
+    }
 }

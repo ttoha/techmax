@@ -830,33 +830,33 @@ h2.section-title {
     font-size:13px;
     font-weight:300;
 }
-.cart textarea {
+textarea {
     margin:0; padding:10px 0 0 10px;
     width:100%; height:130px;
     border:0;
     background-color:#ededed;
 }
-.cart textarea::-webkit-input-placeholder {
+textarea::-webkit-input-placeholder {
     color:#808080;
     opacity:1
 }
-.cart textarea:-moz-placeholder {
+textarea:-moz-placeholder {
     color:#808080;
     opacity:1
 }
-.cart textarea::placeholder {
+textarea::placeholder {
     color:#808080;
     opacity:1
 }
-.cart textarea:focus::-webkit-input-placeholder {
+textarea:focus::-webkit-input-placeholder {
     color:#ededed;
     opacity:1
 }
-.cart textarea:focus:-moz-placeholder {
+textarea:focus:-moz-placeholder {
     color:#ededed;
     opacity:1
 }
-.cart textarea:focus::placeholder {
+textarea:focus::placeholder {
     color:#ededed;
     opacity:1
 }
@@ -874,4 +874,24 @@ h2.section-title {
 }
 .cabinet .bt-black {
     max-width:340px
+}
+
+.contacts .header-desc-item {
+    display:table;
+    margin: 0 auto!important;
+}
+
+.map-container {
+    margin:40px 0
+}
+#map {
+    width:100%; height:370px
+}
+.contacts form {
+    width:100%;
+    max-width:510px;
+    margin:0 auto
+}
+.contacts textarea {
+    margin-bottom: 30px
 }

@@ -208,6 +208,12 @@
     background-position: -830px -2px;
 }
 
+.sprite-zplace {
+    width: 17px;
+    height: 20px;
+    background-position: -858px -2px;
+}
+
 
 .social {
     background-image: url(../img/social.png);
